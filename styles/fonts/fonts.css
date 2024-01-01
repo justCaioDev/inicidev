@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'jdcode';
+    src: url(jd_code.ttf);
+}
+
+@font-face {
+    font-family: 'jockeyone';
+    src: url(JockeyOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'code-bold';
+    src: url(CODE\ Bold.otf);
+}
+
+@font-face {
+    font-family: 'code-light';
+    src: url(CODE\ Light.otf);
+}

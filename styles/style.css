@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-image: url(medias/test.gif);
+
+}
+
+header > .title-header {
+    font-family: 'jockeyone';
+    color: rgb(255, 232, 26);
+    font-weight: normal;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 15px;
+    text-shadow: 0px 0px 10px rgba(255, 232, 26, 0.548);
+}
+
+nav  {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+nav > ul {
+    display: inline-flex;
+    list-style: none;
+    gap: 100px;
+}
+
+li > a {
+    font-family: 'jockeyone';
+    font-weight: normal;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+li > a:hover {
+    background-color: rgb(255, 232, 26);
+    color: rgba(28, 28, 28, 1);
+    transition: 0.3s all;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: rgba(28, 28, 28, 1);
+    margin-block-start: 5px;
+}
+
+.dropdown:hover .dropdown-menu a {
+    font-family: 'code-bold';
+    text-decoration: none;
+    font-size: 0.9em;
+    color: white;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu a:hover {
+    background-color: rgb(255, 232, 26);
+    color: rgba(28, 28, 28, 1);
+    width: 100%;
+    text-align: left;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    margin: auto;
+    width: 80%;
+    height: 500px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.303);
+}
+
+section {
+    margin-top: 30px;
+    display: flex;
+}

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'code-light';
+}
+
+main {
+    text-align: left;
+    padding: 50px;
+}
+
+p {
+    padding: 15px;
+    color: rgb(255, 232, 26)
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-left: 25px;
+    padding-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    color: white;
+}
+
+.title-header {
+    font-family: 'jockeyone';
+    font-weight: normal;
+    text-align: center;
+    font-size: 5em;
+    -webkit-text-stroke: 0.5px white;
+    color: transparent;
+}
+
+.paragrafo {
+    color: white;
+    padding-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
