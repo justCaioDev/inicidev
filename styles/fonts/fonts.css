@@ -17,3 +17,8 @@
     font-family: 'code-light';
     src: url(CODE\ Light.otf);
 }
+
+@font-face {
+    font-family: 'fragmentcore';
+    src: url(Fragmentcore.otf);
+}

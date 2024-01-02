@@ -49,3 +49,104 @@ span {
     margin-top: 20px;
     -webkit-text-stroke: 0.5px black;
 }
+
+.list-itens {
+    padding-left: 30px;
+}
+
+.list {
+    padding: 20px;
+}
+
+.listas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+dd {
+    padding: 20px;
+}
+
+dl {
+    padding-top: 40px;
+}
+
+.animacao {
+    font-family: 'jockeyone';
+    padding-top: 15%;
+    font-size: 3.5em;
+    color: transparent;
+    font-weight: normal;
+    -webkit-text-stroke: 0.5px white;
+    text-shadow: 0px 5px 10px rgba(255, 255, 255, 0.24);
+}
+
+.animacao span {
+    position: relative;
+}
+
+.animacao span::before {
+    content: "";
+    color: rgb(255, 232, 26);
+    -webkit-text-stroke: 0px;
+    font-family: 'jockeyone';
+    font-size: 0.8em;
+    padding: 5px;
+    text-shadow: 0px 0px 15px rgba(255, 232, 26, 0.583);
+    animation: palavras 20s infinite;
+}
+
+.animacao span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 3px solid rgb(255, 232, 26);
+    background-color: black;
+    right: -5px;
+    animation: cursor 0.9s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 10px);
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 10px);
+    }
+    
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 3px solid black;
+    }
+    
+}
+
+@keyframes palavras {
+    0%,20% {
+        content: "Conheça";
+    }
+
+    21%,40% {
+        content: "Aprenda";
+    }
+
+    41%,60% {
+        content: "Relembre";
+    }
+
+    61%,80% {
+        content: "Aproveite";
+    }
+
+    81%, 100% {
+        content: "Divirta-se";
+    }
+    
+}
+
+
+
