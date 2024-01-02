@@ -1,0 +1,61 @@
+@media screen and (max-width: 915px) {
+    nav {
+        display: none;
+    }
+
+    menu#itens1 {
+        display: none;
+        text-align: center;
+    }
+
+    menu#itens1 #itens2 {
+        display: none;
+        flex-direction: column;
+    }
+
+    #itens3 {
+        display: none;
+        flex-direction: column;
+    }
+
+    #itens4 {
+        display: none;
+        flex-direction: column;
+    }
+
+    #tela {
+        width: 80vw;
+        height: 800px;
+    }
+
+    #link-a {
+        color: black;
+        text-decoration: none;
+        font-family: 'code-bold';
+        padding: 10px;
+        background-color: rgb(255, 232, 26);
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 15px solid black;
+        border-right: 15px solid black;
+    }
+
+    #menu-burguer {
+        padding: 20px;
+        cursor: pointer;
+        display: block;
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #menu1, #menu2, #menu3 {
+        cursor: pointer;
+    }
+
+    main .listas {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

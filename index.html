@@ -5,14 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/fonts/fonts.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>IniciDev - Seu site para relembrar.</title>
 </head>
 <body>
     <header>
         <h1 class="title-header">&lt;IniciDev/&gt;</h1>
+        <span class="material-symbols-outlined" id="menu-burguer" onclick="clickMenu()">menu</span>
+
+        <menu id="itens1">
+            <ul>
+                <li>
+                    <a id="menu1" onclick="clickMenuUm()">Títulos e Paragráfo</a>
+
+                    <div id="itens2">
+                        <a id="link-a" href="./pages/titles.html" target="frame">h1, h2, h3...</a>
+                        <a id="link-a" href="pages/paragrafo.html" target="frame">p</a>
+                    </div>
+                </li>
+                <li>
+                    <a id="menu2" onclick="clickMenuDois()">Estilização de texto</a>
+
+                    <div id="itens3">
+                        <a id="link-a" href="pages/negrito.html" target="frame">Negrito</a>
+                        <a id="link-a" href="pages/sublinhado.html" target="frame">Sublinhado</a>
+                        <a id="link-a" href="pages/italico.html" target="frame">Itálico</a>
+                        <a id="link-a" href="pages/texto-riscado.html" target="frame">Texto riscado</a>
+                        <a id="link-a" href="pages/marcador.html" target="frame">Marcador</a>
+                        <a id="link-a" href="pages/sobrescrito.html" target="frame">Sobrescrito</a>
+                        <a id="link-a" href="pages/subscrito.html" target="frame">Subscrito</a>
+                        <a id="link-a" href="pages/code.html" target="frame">Código</a>
+                        <a id="link-a" href="pages/abreviacao.html" target="frame">Abreviação</a>
+
+                    </div>
+                </li>
+                <li>
+                    <a id="menu3" onclick="clickMenuTres()">Listas</a>
+
+                    <div id="itens4">
+                        <a id="link-a" href="pages/lista-ordenada.html" target="frame">Lista Ordenada</a>
+                        <a id="link-a" href="pages/lista-nao-ordenada.html" target="frame">Lista não Ordenada</a>
+                        <a id="link-a" href="pages/lista-de-definicao.html" target="frame">Lista de Definição</a>
+                    </div>
+                </li>
+            </ul>
+        </menu>
+
         <nav>
             <ul>
-                <li  class="dropdown">
+                <li class="dropdown">
                     <a href="index.html">Títulos e Paragráfo</a>
 
                     <div class="dropdown-menu">
@@ -20,7 +62,7 @@
                         <a href="pages/paragrafo.html" target="frame">p</a>
                     </div>
                 </li>
-                <li  class="dropdown">
+                <li class="dropdown">
                     <a href="index.html">Estilização de texto</a>
 
                     <div class="dropdown-menu">
@@ -36,7 +78,7 @@
 
                     </div>
                 </li>
-                <li  class="dropdown">
+                <li class="dropdown">
                     <a href="index.html">Listas</a>
 
                     <div class="dropdown-menu">
@@ -66,5 +108,39 @@
                 <a href="https://linkedin.com/in/caiio" target="_blank">LinkedIn</a>
             </section>
     </footer>
+
+    <script>
+        function clickMenu() {
+           if (itens1.style.display == 'block') {
+            itens1.style.display = 'none'
+           } else {
+                itens1.style.display = 'block'
+           }
+        }
+
+        function clickMenuUm() {
+            if (itens2.style.display == 'flex') {
+                itens2.style.display = 'none'
+            } else {
+                itens2.style.display = 'flex'
+            }
+        }
+
+        function clickMenuDois() {
+            if (itens3.style.display == 'flex') {
+                itens3.style.display = 'none'
+            } else {
+                itens3.style.display = 'flex'
+            }
+        }
+
+        function clickMenuTres() {
+            if (itens4.style.display == 'flex') {
+                itens4.style.display = 'none'
+            } else {
+                itens4.style.display = 'flex'
+            }
+        }
+    </script>
 </body>
 </html>
