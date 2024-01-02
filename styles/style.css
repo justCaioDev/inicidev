@@ -159,6 +159,10 @@ footer > .footer-sobre {
     display: none;
 }
 
-menu#itens1, #itens2 {
+#itens1, #itens2, #itens3, #itens4  {
     display: none;
 }
+
+#menu1, #menu2, #menu3 {
+    display: none;
+} 
